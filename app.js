@@ -32,11 +32,11 @@ app.post("/",function(req,res){
     };
     const jsonData = JSON.stringify(data);
 
-    const url = "https://us1.api.mailchimp.com/3.0/lists/ef9a076e76";
+    const url = "https://us1.api.mailchimp.com/3.0/lists/efds6e76";
 
     const options={
         method: "POST",
-        auth :"alok : 83aeea3e3b1762058e37181167847dc4-us1"
+        auth :"alok : 83aeea3e3b1762058e37187dc4-us1"
     }
 
     const request = https.request(url,options,function(response){
@@ -53,10 +53,3 @@ app.post("/",function(req,res){
 app.listen(3000,function(){
     console.log("sever is runing");
 });
-
-
-// API Key
-// 83aeea3e3b1762058e37181167847dc4-us1
-
-// audience 
-// ef9a076e76
